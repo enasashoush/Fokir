@@ -1,0 +1,590 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home
+{
+    height: 100vh;
+    background-image: url(slider-02.jpg);
+    background-size: cover; 
+    position: relative;
+    background-position: center; 
+}
+
+.home::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.911); 
+
+}
+
+.navbar 
+{  
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.336); 
+
+}
+
+.navbar ul
+{
+    float: right;
+    margin: 0px 10px;
+}
+
+.navbar ul li
+{
+    display: inline-block; 
+    padding:  0px 5px;
+    transition-delay: 0.5s;  
+}
+
+.navbar a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li :hover
+{
+   color: #FF305B;
+   transition: 0.5s;
+}  
+
+.clear-fix
+{
+    clear: both;
+}
+
+.navbar h2 
+{
+    display: inline-block;
+    padding: 0px 40px ;
+    
+}
+
+.navbar h2 a
+{
+    color: #FF305B;
+}
+
+.homeText
+{
+    color: white;
+    text-align: center;
+    margin: 15%;
+    position: relative;
+    z-index: 1;
+
+}
+
+.homeText h1
+{
+    color: #FF305B;
+    padding: 15px; 
+    font-size: 65px;
+}
+
+.homeText p
+{
+    font-size: x-large;
+}
+
+.aboutImg
+{
+    display: inline-block;
+    margin: 60px 0px 60px 150px; 
+    position: relative;
+}
+
+.aboutImg img
+{
+    border-radius: 5px;
+    width: 100%;
+    transition: 1s;
+    display: block;
+}
+
+.aboutImg::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    background-color: black;
+    transition: 0.5s ease,  0.5s ease, 0.5s;
+    transform-origin: top;
+    border-radius: 5px;
+}
+
+.aboutImg:hover::before
+{
+    opacity: 0.5;
+    height: 100%;
+    transform-origin: bottom;
+    transform: scaleY(1);
+    
+}
+
+.aboutText
+{
+    background-color: white;
+    text-align: left; 
+    float: right;
+    padding: 70px 150px 70px 0px ;
+}
+
+.aboutText p
+{
+    margin: 10px 0px;
+    display: inline-block;
+}
+
+.aboutText h2
+{
+    float: left;
+    padding:  0px 10px;
+
+}
+
+.aboutText td
+{
+    padding: 10px 20px ;
+}
+
+.aboutText table
+{
+    padding: 20px 0px;
+}
+
+.aboutText button
+{
+    margin: 0px 20px ;
+    font-size: large;
+    padding: 15px 25px ;
+    border-radius: 5px;
+    background-color: #FF305B;
+    color: white;
+    border-width: 0px;   
+    transition-delay: 0.5s; 
+    transition: 0.5s ease,  0.5s ease, 0.5s ease;
+}
+
+.aboutText button a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.aboutText button:hover
+{
+    background-color: firebrick;
+    transition: 0.5s;
+    
+}
+
+.line
+{
+    border-top: rgba(128, 128, 128, 0.432);
+    border-style: dashed;
+    border-width: 1px;
+    margin: 15px 0px;
+}
+ 
+.pink
+{
+    background-color: #FF305B;
+    padding: 10px 2px ;
+    float: left;
+    margin: 4px 0px;
+}
+
+.cards
+{
+    background-color: rgba(220, 220, 220, 0.644);
+    display: inline-block;
+    padding: 100px 0px;
+
+   
+}
+
+
+.cards h1
+{
+    text-align: center;
+    padding-bottom: 20px;   
+
+}
+
+.underline
+{
+    
+    padding-bottom: 1;
+    position: relative;
+    
+}
+
+.underline::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 5%;
+    height: 1px;
+    left: 650;
+    background-color: #FF305B;
+    text-align: center;
+    
+}
+
+.underlineTwo
+{
+    
+    padding-bottom: 1;
+    position: relative;
+    
+}
+
+.underlineTwo::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 12%;
+    height: 1px;
+    left: 600;
+    background-color: #FF305B;
+    text-align: center;
+    margin: 5px;
+    
+    
+}
+
+.underlineThree
+{
+    
+    padding-bottom: 1;
+    position: relative;
+    
+}
+
+.underlineThree::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 5%;
+    height: 1px;
+    left: 650;
+    background-color: #FF305B;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.card
+{
+
+    text-align: center;
+    display: inline-block;
+    width: 21%;
+    color: black;
+    vertical-align: middle;
+    margin: 22px ;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+
+}
+.card:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    background-color: white;
+
+}
+
+
+.card h3
+{
+    padding: 25px;
+
+}
+
+.icon
+{
+    font-size: xx-large ;
+    color: #FF305B;
+}
+
+.portfolio
+{
+    margin: 50px 30px;
+
+
+}
+
+.portfolio h1
+{
+    text-align: center;
+    padding-bottom: 20px; 
+    
+}
+
+
+.navTwo ul
+{
+    text-align: center;
+
+}
+
+.navTwo ul li
+{
+    display: inline-block;
+    padding: 20px 10px;
+
+}
+.navTwo ul li a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.image img
+{
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    padding: 30px;
+    transition: 1s;
+}
+
+.image img:hover
+{
+    opacity: 0.7;
+    width: 33%;
+}
+
+.count
+{
+    background-color: rgba(220, 220, 220, 0.644);
+    padding: 80px 50px;
+    width: 100%;
+ 
+}
+
+.num
+{
+
+    text-align: center;
+    display: inline-block;
+    width: 24%;
+    color: black;
+    vertical-align: middle;
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+
+}
+
+.count h3
+{
+    padding: 12px;
+}
+
+.feedback
+{
+    margin: 50px;
+}
+
+.feedback h1
+{
+    text-align: center;
+    padding: 15px;
+}
+
+.feed
+{
+    border: 5px solid white;
+    border-width: 60px;
+    display: inline-block;
+    border-radius: 10px;
+    width: 75%;
+    color: black;
+    margin: 50px ;
+    box-shadow: 5px;
+    padding-left: 200px;
+    position: relative;
+
+}
+
+.feed:hover
+{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.feed img
+{
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 35;
+}
+
+.feed p
+{
+    display: inline;
+}
+
+.blog
+{
+    background-color: gainsboro;
+    padding: 50px 30px;
+}
+
+.blog h1
+{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.item
+{
+    display: inline-block;
+    background-color: white;
+    width: 28%;
+    border-radius: 5px;
+    margin: 30px ;
+   
+
+}
+
+.item img
+{
+    width: 100%;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.item a
+{
+    text-decoration: none ;
+    color: black;
+    padding: 20px;
+}
+
+.item a:hover
+{
+    color: #FF305B;
+    transition: 0,5s;
+}
+
+.item p
+{
+    padding: 20px;
+}
+
+.comment
+{
+    background-color: gainsboro;
+    padding: 50px 30px;
+}
+
+.comment h1
+{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.comment form
+{
+    text-align: center;
+    
+}
+
+.input
+{
+    padding: 10px 100px;
+    margin: 15px;
+    border-radius: 10px;
+    border-color: gainsboro;
+
+}
+.textsub
+{
+    padding: 10px 300px;
+    margin: 15px;
+    border-radius: 10px;
+    border-color: gainsboro;
+    
+}
+
+form button
+{
+    margin: 0px 20px ;
+    font-size: large;
+    padding: 15px 25px ;
+    border-radius: 5px;
+    background-color: #FF305B;
+    color: white;
+    border-width: 0px;   
+    transition-delay: 0.5s; 
+    transition: 0.5s ease,  0.5s ease, 0.5s ease;
+}
+
+
+form button a
+{
+    text-decoration: none;
+    color: white;
+}
+
+form button:hover
+{
+    background-color: firebrick;
+    transition: 0.5s;
+    
+}
+
+.footer
+{
+    text-align: center;
+    padding: 80px;
+    background-color: rgba(0, 0, 0, 0.849);
+    color:rgba(209, 187, 159, 0.582);
+}
+.footer img
+{
+    padding: 20px;
+}
+
+.icon2
+{
+    font-size: x-large;
+    margin: 10px;
+    color: rgb(53, 53, 53);
+
+}
+
+.icon2:hover
+{
+    color: #FF305B;
+    transition: 0.5s;
+}
